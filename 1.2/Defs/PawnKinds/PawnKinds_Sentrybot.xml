@@ -8,9 +8,13 @@
     <combatPower>100</combatPower>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-    <backstoryCategories>
-      <li>SentrybotCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>SentrybotCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>SentrybotOnly</li>
@@ -51,9 +55,13 @@
     <defName>Robot_Sentrybot_Colonist</defName>
     <label>Sentrybot</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategories>
-      <li>SentrybotCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>SentrybotCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>SentrybotOnly</li>
@@ -67,9 +75,13 @@
     <defName>Robot_Sentrybot_Pawns</defName>
     <label>Sentrybot</label>
     <defaultFactionType>Ancients</defaultFactionType>
-    <backstoryCategories>
-      <li>SentrybotCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>SentrybotCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>SentrybotOnly</li>
@@ -83,9 +95,13 @@
     <defName>Robot_Sentrybot_Pirate</defName>
     <label>Sentrybot</label>
     <defaultFactionType>Pirate</defaultFactionType>
-    <backstoryCategories>
-      <li>SentrybotCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>SentrybotCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>SentrybotOnly</li>

@@ -7,9 +7,13 @@
     <combatPower>40</combatPower>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-    <backstoryCategories>
-      <li>NurseHandyCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>NurseHandyCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>Neolithic</li>
@@ -42,9 +46,13 @@
     <defName>Robot_Nurse_Handy_Colonist</defName>
     <label>Nurse Handy</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategories>
-      <li>NurseHandyCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>NurseHandyCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -71,9 +79,13 @@
     <defName>Robot_Nurse_Handy_Pawns</defName>
     <label>Nurse Handy</label>
     <defaultFactionType>Ancients</defaultFactionType>
-    <backstoryCategories>
-      <li>NurseHandyCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>NurseHandyCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>

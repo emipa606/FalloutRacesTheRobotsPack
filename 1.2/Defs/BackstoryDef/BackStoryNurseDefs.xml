@@ -15,14 +15,6 @@
         <amount>8</amount>
       </li>
     </skillGains>
-    <bioAgeRange>
-      <min>2</min>
-      <max>200</max>
-    </bioAgeRange>
-    <chronoAgeRange>
-      <min>0</min>
-      <max>300</max>
-    </chronoAgeRange>
     <spawnCategories>
       <li>NurseHandyCat</li>
     </spawnCategories>
@@ -45,14 +37,6 @@
     <baseDescription>[PAWN_nameDef] was created to serve as a robo-nurse.</baseDescription>
     <slot>Adulthood</slot>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
-    <bioAgeRange>
-      <min>2</min>
-      <max>200</max>
-    </bioAgeRange>
-    <chronoAgeRange>
-      <min>0</min>
-      <max>300</max>
-    </chronoAgeRange>
     <spawnCategories>
       <li>NurseHandyCat</li>
     </spawnCategories>
@@ -138,5 +122,83 @@
   </AlienRace.BackstoryDef>
   <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
     <defName>Nurse12Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse13Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse13Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse14Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse14Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse15Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse15Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse16Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse16Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse17Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse17Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse18Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse18Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse19Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse19Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse20Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse20Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse21Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse21Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse22Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse22Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse23Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse23Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse24Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse24Adult</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultChild">
+    <defName>Nurse25Child</defName>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="NurseDefaultAdult">
+    <defName>Nurse25Adult</defName>
   </AlienRace.BackstoryDef>
 </Defs>

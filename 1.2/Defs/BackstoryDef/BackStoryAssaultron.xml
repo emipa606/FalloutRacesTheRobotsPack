@@ -18,14 +18,6 @@
         <amount>8</amount>
       </li>
     </skillGains>
-    <bioAgeRange>
-      <min>2</min>
-      <max>200</max>
-    </bioAgeRange>
-    <chronoAgeRange>
-      <min>0</min>
-      <max>300</max>
-    </chronoAgeRange>
     <workDisables>
       <li>Social</li>
       <li>ManualDumb</li>
@@ -49,14 +41,6 @@
     <baseDescription>[PAWN_nameDef] was created to serve as a robo-assassin.</baseDescription>
     <slot>Adulthood</slot>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
-    <bioAgeRange>
-      <min>2</min>
-      <max>200</max>
-    </bioAgeRange>
-    <chronoAgeRange>
-      <min>0</min>
-      <max>300</max>
-    </chronoAgeRange>
     <spawnCategories>
       <li>AssaultronCat</li>
     </spawnCategories>

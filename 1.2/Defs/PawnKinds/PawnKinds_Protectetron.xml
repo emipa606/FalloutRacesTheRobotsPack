@@ -8,9 +8,13 @@
     <combatPower>50</combatPower>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-    <backstoryCategories>
-      <li>ProtectetronCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ProtectetronCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>Neolithic</li>
@@ -43,9 +47,13 @@
     <defName>Robot_Protectetron_Colonist</defName>
     <label>Protectetron</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategories>
-      <li>ProtectetronCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ProtectetronCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -72,9 +80,13 @@
     <defName>Robot_Protectetron_Pawns</defName>
     <label>Protectetron</label>
     <defaultFactionType>Ancients</defaultFactionType>
-    <backstoryCategories>
-      <li>ProtectetronCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ProtectetronCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -101,9 +113,13 @@
     <defName>Robot_Protectetron_Pirate</defName>
     <label>Protectetron</label>
     <defaultFactionType>Pirate</defaultFactionType>
-    <backstoryCategories>
-      <li>ProtectetronCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ProtectetronCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>

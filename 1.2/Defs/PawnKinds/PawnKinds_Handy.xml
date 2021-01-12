@@ -8,9 +8,13 @@
     <combatPower>50</combatPower>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-    <backstoryCategories>
-      <li>MrHandyCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MrHandyCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>Neolithic</li>
@@ -43,9 +47,13 @@
     <defName>Robot_Handy_Colonist</defName>
     <label>Mister Handy</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategories>
-      <li>MrHandyCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MrHandyCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -72,9 +80,13 @@
     <defName>Robot_Handy_Pawns</defName>
     <label>Mister Handy</label>
     <defaultFactionType>Ancients</defaultFactionType>
-    <backstoryCategories>
-      <li>MrHandyCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MrHandyCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>

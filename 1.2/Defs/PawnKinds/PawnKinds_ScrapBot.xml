@@ -8,9 +8,13 @@
     <combatPower>40</combatPower>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-    <backstoryCategories>
-      <li>ScrapBotCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ScrapBotCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>Neolithic</li>
@@ -43,9 +47,13 @@
     <defName>Robot_ScrapBot_Colonist</defName>
     <label>Scrapbot</label>
     <defaultFactionType>PlayerColony</defaultFactionType>
-    <backstoryCategories>
-      <li>ScrapBotCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ScrapBotCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>
@@ -72,9 +80,13 @@
     <defName>Robot_ScrapBot_Pawns</defName>
     <label>Scrapbot</label>
     <defaultFactionType>Ancients</defaultFactionType>
-    <backstoryCategories>
-      <li>ScrapBotCat</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ScrapBotCat</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.00</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>

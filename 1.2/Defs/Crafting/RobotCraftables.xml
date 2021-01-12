@@ -293,7 +293,7 @@
     <products>
       <ProtectetronKit>1</ProtectetronKit>
     </products>
-    <researchPrerequisite>ScrapBotResearch</researchPrerequisite>
+    <researchPrerequisite>ProtectetronResearch</researchPrerequisite>
     <workAmount>4000</workAmount>
     <unfinishedThingDef>UnfinishedRobot</unfinishedThingDef>
     <workSkill>Crafting</workSkill>
