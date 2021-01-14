@@ -45,6 +45,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 - Added UI-icons for the mounted weapons
 - Mod now uses [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2242735675]Multi Verb Combat Framework[/url] to enable the mounted weapons
 - Since the 1.1 version of the mod was rewritten to not use the mounted weapons the 1.0 version was chosen for the update instead
+- Added all mountable weapons as craftable in the Machining bench
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
@@ -55,6 +56,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
     [/tr]
 [/table]
 	
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657][img]https://i.imgur.com/kNldlMg.png[/img][/url]
+
 [img]https://i.imgur.com/NOW7jU1.png[/img]
 Important Note! Right click the Securitrons weapon to switch!
 Another note! The Assaultron needs the Assaultron helmet and it can NOT be independently fired it has some AI
@@ -165,5 +168,17 @@ AshbornK9 for his plasma texture.
 Arisher for making the majority of the textures and helping me with ideas and balancing.
 Ogliss for creating the Assaultron Face-laser AI
 Any and all balancing advice would be appreciated.
-ideas and suggestions would also be welcome!</description>
+ideas and suggestions would also be welcome!
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+
