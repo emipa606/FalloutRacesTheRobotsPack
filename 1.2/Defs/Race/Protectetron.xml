@@ -238,6 +238,10 @@
           <li>KindWordsMood</li>
         </cannotReceiveThoughts>
       </thoughtSettings>
+      <compatibility>
+        <isFlesh>false</isFlesh>
+        <hasBlood>false</hasBlood>
+      </compatibility>
     </alienRace>
     <statBases>
       <ToxicSensitivity>0</ToxicSensitivity>
