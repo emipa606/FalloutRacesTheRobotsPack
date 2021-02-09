@@ -97,6 +97,7 @@
               <defName>FRTRP_RandomRobotJoinsTheColony</defName>
               <label>A Random Robot Joins</label>
               <cost>150</cost>
+              <tab>Mlie_Continued</tab>
               <incident>FRTRP_RandomRobotJoinsTheColony</incident>
             </AchievementsExpanded.Reward_MapIncident>
           </value>
