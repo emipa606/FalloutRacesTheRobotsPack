@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <MVCF.ModDef>
+    <defName>FalloutRacesTheRobotsPack</defName>
+    <label>Fallout Races: The Robots Pack (Continued)</label>
+    <description>Adding ranged mounted weapons for Fallout Robots</description>
+    <Features>
+      <HediffVerbs>true</HediffVerbs>
+      <IntegratedToggle>true</IntegratedToggle>
+      <IndependentFire>true</IndependentFire>
+    </Features>
+  </MVCF.ModDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>MountedFlamethrower</defName>
     <label>mounted flamethrower</label>
     <description>mounted flamethrower</description>
     <labelNoun>a mounted flamethrower</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
@@ -27,6 +37,14 @@
             <commandIcon>GUI/Commands/flame_thrower</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted flamethrower</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -58,7 +76,7 @@
     <description>mounted plasma pistol</description>
     <labelNoun>a mounted plasma pistol</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
@@ -77,6 +95,14 @@
             <commandIcon>GUI/Commands/plasma_pistol</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted plasma pistol</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -106,11 +132,11 @@
     <description>mounted right laser</description>
     <labelNoun>a mounted laser</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
-            <label>mounted laser</label>
+            <label>mounted right laser</label>
             <accuracyTouch>0.80</accuracyTouch>
             <accuracyShort>0.75</accuracyShort>
             <accuracyMedium>0.45</accuracyMedium>
@@ -125,6 +151,14 @@
             <commandIcon>GUI/Commands/laser_rifle</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted right laser</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -140,11 +174,11 @@
     <description>mounted middle laser</description>
     <labelNoun>a mounted laser</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
-            <label>mounted laser</label>
+            <label>mounted middle laser</label>
             <accuracyTouch>0.80</accuracyTouch>
             <accuracyShort>0.75</accuracyShort>
             <accuracyMedium>0.45</accuracyMedium>
@@ -159,6 +193,14 @@
             <commandIcon>GUI/Commands/laser_rifle</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted middle laser</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -174,11 +216,11 @@
     <description>mounted left laser</description>
     <labelNoun>a mounted laser</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
-            <label>mounted laser</label>
+            <label>mounted left laser</label>
             <accuracyTouch>0.80</accuracyTouch>
             <accuracyShort>0.75</accuracyShort>
             <accuracyMedium>0.45</accuracyMedium>
@@ -193,6 +235,14 @@
             <commandIcon>GUI/Commands/laser_rifle</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted left laser</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -223,7 +273,7 @@
     <description>mounted machine gun</description>
     <labelNoun>a mounted machine gun</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
@@ -244,6 +294,14 @@
             <commandIcon>GUI/Commands/machine_gun</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted machine gun</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -251,7 +309,7 @@
       <partEfficiency>1</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
-    <spawnThingOnRemoved>MountedPlasmaRifle</spawnThingOnRemoved>
+    <spawnThingOnRemoved>MountedMiniGun</spawnThingOnRemoved>
   </HediffDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>MountedMiniGun</defName>
@@ -259,11 +317,11 @@
     <description>mounted mini gun</description>
     <labelNoun>a mounted mini gun</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
-            <label>mounted machine gun</label>
+            <label>mounted mini gun</label>
             <accuracyTouch>0.15</accuracyTouch>
             <accuracyShort>0.25</accuracyShort>
             <accuracyMedium>0.25</accuracyMedium>
@@ -280,6 +338,14 @@
             <commandIcon>GUI/Commands/machine_gun</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted mini gun</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -308,7 +374,7 @@
     <description>mounted gatling laser</description>
     <labelNoun>a mounted gatling laser</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
@@ -329,6 +395,14 @@
             <commandIcon>GUI/Commands/gatling_laser</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted gatling laser</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -344,7 +418,7 @@
     <description>mounted gatling laser</description>
     <labelNoun>a mounted gatling laser</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_Shoot</verbClass>
@@ -365,6 +439,14 @@
             <commandIcon>GUI/Commands/gatling_laser</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted gatling laser</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -393,7 +475,7 @@
     <description>mounted missile lancher</description>
     <labelNoun>a mounted missile lanucher that fires a cluster of 3 large rockets.</labelNoun>
     <comps>
-      <li Class="HediffCompProperties_VerbGiver">
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
             <verbClass>Verb_ShootOneUse</verbClass>
@@ -414,6 +496,14 @@
             <commandIcon>GUI/Commands/missile_launcher</commandIcon>
           </li>
         </verbs>
+        <verbProps>
+          <li>
+            <label>mounted missile launcher</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+            <!-- <canFireIndependently>true</canFireIndependently> -->
+          </li>
+        </verbProps>
       </li>
     </comps>
     <addedPartProps>
@@ -421,7 +511,7 @@
       <partEfficiency>1</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
-    <spawnThingOnRemoved>MountedGatlingLaser</spawnThingOnRemoved>
+    <spawnThingOnRemoved>MountedMissileLauncher</spawnThingOnRemoved>
   </HediffDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_Rockets</defName>
