@@ -38,6 +38,7 @@
     <li>erdelf.HumanoidAlienRaces</li>
     <li>jecrell.jecstools</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>syrchalis.traitvalue</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of RamRods mod
@@ -48,6 +49,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 - As the MVCF-mod has been absorbed into [url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla Expanded Framework[/url] the requirement have changed for the mod
 - Since the 1.1 version of the mod was rewritten to not use the mounted weapons the 1.0 version was chosen for the update instead
 - Added all mountable weapons as craftable in the Machining bench
+- Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
