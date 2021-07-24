@@ -1,6 +1,5 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -21,20 +20,37 @@ namespace FaceLaserTesting
                 {
                     return Parental.TryGetComp<CompEquippableTurret>();
                 }
+
                 return null;
             }
         }
 
-        public override void SpawnSetup(Map map, bool respawningAfterLoad)
-        {
-            base.SpawnSetup(map, respawningAfterLoad);
-            //    Log.Message(string.Format("turret spawned"));
-        }
+        // Token: 0x17000561 RID: 1377
+        // (get) Token: 0x06002432 RID: 9266 RVA: 0x001137B0 File Offset: 0x00111BB0
+        private bool CanSetForcedTarget => mannableComp != null && PlayerControlled;
 
-        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        // Token: 0x17000562 RID: 1378
+        // (get) Token: 0x06002433 RID: 9267 RVA: 0x001137C6 File Offset: 0x00111BC6
+        private bool CanToggleHoldFire => PlayerControlled;
+
+
+        // Token: 0x17000564 RID: 1380
+        // (get) Token: 0x06002435 RID: 9269 RVA: 0x001137E0 File Offset: 0x00111BE0
+        private bool IsMortarOrProjectileFliesOverhead => AttackVerb.ProjectileFliesOverhead();
+
+        private bool PlayerControlled => Faction == Faction.OfPlayer;
+
+        public override LocalTargetInfo CurrentTarget
         {
-            base.DeSpawn(mode);
-            //    Log.Message(string.Format("turret despawned"));
+            get
+            {
+                if (Parental.TargetCurrentlyAimingAt != null)
+                {
+                    return Parental.TargetCurrentlyAimingAt;
+                }
+
+                return base.CurrentTarget;
+            }
         }
 
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
@@ -42,17 +58,18 @@ namespace FaceLaserTesting
             base.Destroy(mode);
             //    Log.Message(string.Format("turret destroyed"));
         }
+
         public override void ExposeData()
         {
             base.ExposeData();
-               Scribe_References.Look<Pawn>(ref Parental, "Parental", false);
-            Scribe_Values.Look<bool>(ref turretIsOn, "TurretIsOn");
+            Scribe_References.Look(ref Parental, "Parental");
+            Scribe_Values.Look(ref turretIsOn, "TurretIsOn");
         }
 
         public override void Tick()
         {
             base.Tick();
-            if (Parental == null || (Parental is Pawn pawn && (pawn.Dead || pawn.Downed)))//||this.comp==null)
+            if (Parental == null || Parental is { } pawn && (pawn.Dead || pawn.Downed)) //||this.comp==null)
             {
                 Destroy();
             }
@@ -77,20 +94,6 @@ namespace FaceLaserTesting
             }
             */
         }
-        // Token: 0x17000561 RID: 1377
-        // (get) Token: 0x06002432 RID: 9266 RVA: 0x001137B0 File Offset: 0x00111BB0
-        private bool CanSetForcedTarget => mannableComp != null && PlayerControlled;
-
-        // Token: 0x17000562 RID: 1378
-        // (get) Token: 0x06002433 RID: 9267 RVA: 0x001137C6 File Offset: 0x00111BC6
-        private bool CanToggleHoldFire => PlayerControlled;
-
-
-        // Token: 0x17000564 RID: 1380
-        // (get) Token: 0x06002435 RID: 9269 RVA: 0x001137E0 File Offset: 0x00111BE0
-        private bool IsMortarOrProjectileFliesOverhead => AttackVerb.ProjectileFliesOverhead();
-
-        private bool PlayerControlled => Faction == Faction.OfPlayer;
 
         // Token: 0x0600244C RID: 9292 RVA: 0x00114342 File Offset: 0x00112742
         private void ResetForcedTarget()
@@ -113,26 +116,27 @@ namespace FaceLaserTesting
         // Token: 0x0600244E RID: 9294 RVA: 0x0011437D File Offset: 0x0011277D
         public void EditGun()
         {
-            CompQuality Weapon_Quality = gun.TryGetComp<CompQuality>();
+            var Weapon_Quality = gun.TryGetComp<CompQuality>();
             if (Weapon_Quality != null)
             {
-                Comp.parent.TryGetQuality(out QualityCategory Q);
+                Comp.parent.TryGetQuality(out var Q);
                 Weapon_Quality.SetQuality(Q, ArtGenerationContext.Outsider);
             }
+
             UpdateGunVerbs();
         }
 
         // Token: 0x0600244F RID: 9295 RVA: 0x001143A4 File Offset: 0x001127A4
         private void UpdateGunVerbs()
         {
-            List<Verb> allVerbs = gun.TryGetComp<CompEquippable>().AllVerbs;
-            for (var i = 0; i < allVerbs.Count; i++)
+            var allVerbs = gun.TryGetComp<CompEquippable>().AllVerbs;
+            foreach (var verb in allVerbs)
             {
-                Verb verb = allVerbs[i];
                 verb.caster = this;
-                verb.castCompleteCallback = new Action(BurstComplete);
+                verb.castCompleteCallback = BurstComplete;
             }
         }
+
         public override IEnumerable<Gizmo> GetGizmos()
         {
             if (CanSetForcedTarget)
@@ -141,7 +145,7 @@ namespace FaceLaserTesting
                 {
                     defaultLabel = "CommandSetForceAttackTarget".Translate(),
                     defaultDesc = "CommandSetForceAttackTargetDesc".Translate(),
-                    icon = ContentFinder<Texture2D>.Get("UI/Commands/Attack", true),
+                    icon = ContentFinder<Texture2D>.Get("UI/Commands/Attack"),
                     verb = AttackVerb,
                     hotKey = KeyBindingDefOf.Misc4
                 };
@@ -149,28 +153,33 @@ namespace FaceLaserTesting
                 {
                     attack.Disable("CannotFire".Translate() + ": " + "Roofed".Translate().CapitalizeFirst());
                 }
+
                 yield return attack;
             }
-            if (forcedTarget.IsValid)
+
+            if (!forcedTarget.IsValid)
             {
-                var stop = new Command_Action
-                {
-                    defaultLabel = "CommandStopForceAttack".Translate(),
-                    defaultDesc = "CommandStopForceAttackDesc".Translate(),
-                    icon = ContentFinder<Texture2D>.Get("UI/Commands/Halt", true),
-                    action = delegate ()
-                    {
-                        ResetForcedTarget();
-                        SoundDefOf.Tick_Low.PlayOneShotOnCamera(null);
-                    }
-                };
-                if (!forcedTarget.IsValid)
-                {
-                    stop.Disable("CommandStopAttackFailNotForceAttacking".Translate());
-                }
-                stop.hotKey = KeyBindingDefOf.Misc5;
-                yield return stop;
+                yield break;
             }
+
+            var stop = new Command_Action
+            {
+                defaultLabel = "CommandStopForceAttack".Translate(),
+                defaultDesc = "CommandStopForceAttackDesc".Translate(),
+                icon = ContentFinder<Texture2D>.Get("UI/Commands/Halt"),
+                action = delegate
+                {
+                    ResetForcedTarget();
+                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
+                }
+            };
+            if (!forcedTarget.IsValid)
+            {
+                stop.Disable("CommandStopAttackFailNotForceAttacking".Translate());
+            }
+
+            stop.hotKey = KeyBindingDefOf.Misc5;
+            yield return stop;
             /*
             if (this.CanToggleHoldFire)
             {
@@ -192,18 +201,6 @@ namespace FaceLaserTesting
                 };
             }
             */
-            yield break;
-        }
-        public override LocalTargetInfo CurrentTarget
-        {
-            get
-            {
-                if (Parental.TargetCurrentlyAimingAt != null)
-                {
-                    return Parental.TargetCurrentlyAimingAt;
-                }
-                return base.CurrentTarget;
-            }
         }
 
         //public override Verb AttackVerb => base.AttackVerb.EquipmentSource.TryGetQuality();

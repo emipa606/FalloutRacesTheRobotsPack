@@ -1,10 +1,10 @@
-﻿using RimWorld;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using RimWorld;
 using Verse;
 
 namespace Robots
 {
-    class IncidentWorker_RandomRobotJoin : IncidentWorker_WandererJoin
+    internal class IncidentWorker_RandomRobotJoin : IncidentWorker_WandererJoin
     {
         public static readonly List<string> allRobotPawnKindNames = new List<string>
         {
@@ -21,12 +21,16 @@ namespace Robots
         public override Pawn GeneratePawn()
         {
             Gender? fixedGender = null;
-            if (this.def.pawnFixedGender != Gender.None)
+            if (def.pawnFixedGender != Gender.None)
             {
-                fixedGender = new Gender?(this.def.pawnFixedGender);
+                fixedGender = def.pawnFixedGender;
             }
+
             var pawnKind = DefDatabase<PawnKindDef>.GetNamed(allRobotPawnKindNames.RandomElement());
-            return PawnGenerator.GeneratePawn(new PawnGenerationRequest(pawnKind, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, true, false, false, false, false, true, 0, false, false, false, false, false, false, false, false, 0f, null, 1f, null, null, null, null, null, null, null, fixedGender, null, null, null, null));
+            return PawnGenerator.GeneratePawn(new PawnGenerationRequest(pawnKind, Faction.OfPlayer,
+                PawnGenerationContext.NonPlayer, -1, true, false, false, false, false, true, 0, false, false, false,
+                false, false, false, false, false, 0f, 0, null, 1f, null, null, null, null, null, null, null,
+                fixedGender));
         }
     }
 }
