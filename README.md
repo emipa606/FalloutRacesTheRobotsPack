@@ -1,6 +1,6 @@
 # FalloutRacesTheRobotsPack
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of RamRods mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
@@ -12,22 +12,13 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 - Added all mountable weapons as craftable in the Machining bench
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-    [tr]
-        [td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-        [td]https://github.com/emipa606/FalloutRacesTheRobotsPack]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-    [/tr]
-[/table]
 	
 https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657]![Image](https://i.imgur.com/kNldlMg.png)
 
 
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 Important Note! Right click the Securitrons weapon to switch!
 Another note! The Assaultron needs the Assaultron helmet and it can NOT be independently fired it has some AI
@@ -52,7 +43,7 @@ The Mister Gutsy unit is a great fighter mounted with a Plasma Rifle.
 
 The Securitron is an amazing fighter mounted with a Gatling Laser for far armored enemies and a 9mm machine gun for close range fleshy targets.
 
-The Assaultron is a nimble assassin capable of devistating colonies with it&apos;s AI independently fired lasers.
+The Assaultron is a nimble assassin capable of devistating colonies with it's AI independently fired lasers.
 
 The Sentrybot is a tank. 
 
@@ -140,7 +131,7 @@ Ogliss for creating the Assaultron Face-laser AI
 Any and all balancing advice would be appreciated.
 ideas and suggestions would also be welcome!
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -150,7 +141,6 @@ ideas and suggestions would also be welcome!
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
-
 
 
 

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="FalloutRacesTheRobotsPack_UpdateFeatureBase">
     <modNameReadable>FalloutRacesTheRobotsPack</modNameReadable>
     <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2347136687</linkUrl>
   </HugsLib.UpdateFeatureDef>
-  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef ParentName="FalloutRacesTheRobotsPack_UpdateFeatureBase">
     <defName>FalloutRacesTheRobotsPack_1_0_7_0</defName>
     <assemblyVersion>1.0.7.0</assemblyVersion>
     <content>Since the mod Multi Verb Combat Framework has been absorbed into the Vanilla Expanded Framework this mod has now changed as well. You now need the Vanilla Expanded Framework for the mounted weapons to work as they should. Sorry for any inconvenience but this change is out of my control.

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Fallout Races: The Robots Pack (Continued)</name>
   <packageId>Mlie.FalloutRacesTheRobotsPack</packageId>
@@ -41,7 +41,7 @@
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
     <li>syrchalis.traitvalue</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of RamRods mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 
@@ -52,7 +52,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 - Added all mountable weapons as craftable in the Machining bench
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
     [tr]
@@ -63,7 +63,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 	
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657][img]https://i.imgur.com/kNldlMg.png[/img][/url]
 
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 Important Note! Right click the Securitrons weapon to switch!
 Another note! The Assaultron needs the Assaultron helmet and it can NOT be independently fired it has some AI
 
@@ -87,7 +87,7 @@ The Mister Gutsy unit is a great fighter mounted with a Plasma Rifle.
 
 The Securitron is an amazing fighter mounted with a Gatling Laser for far armored enemies and a 9mm machine gun for close range fleshy targets.
 
-The Assaultron is a nimble assassin capable of devistating colonies with it&apos;s AI independently fired lasers.
+The Assaultron is a nimble assassin capable of devistating colonies with it's AI independently fired lasers.
 
 The Sentrybot is a tank. 
 
@@ -175,7 +175,7 @@ Ogliss for creating the Assaultron Face-laser AI
 Any and all balancing advice would be appreciated.
 ideas and suggestions would also be welcome!
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -184,6 +184,5 @@ ideas and suggestions would also be welcome!
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
-
 </description>
 </ModMetaData>
