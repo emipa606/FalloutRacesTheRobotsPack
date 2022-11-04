@@ -1,15 +1,14 @@
 ﻿using Verse;
 
-namespace RobotStuff
+namespace RobotStuff;
+
+/// <summary>
+///     Marks the ThingDef for being tweaked on initialisation.
+/// </summary>
+public class RobotEdit : DefModExtension
 {
     /// <summary>
-    ///     Marks the ThingDef for being tweaked on initialisation.
+    ///     Tweaks the corpse by removing its rotting ability.
     /// </summary>
-    public class RobotEdit : DefModExtension
-    {
-        /// <summary>
-        ///     Tweaks the corpse by removing its rotting ability.
-        /// </summary>
-        public bool removeCorpseRot = true;
-    }
+    public bool removeCorpseRot = true;
 }

@@ -12,6 +12,10 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 - Added all mountable weapons as craftable in the Machining bench
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
 
+Regarding texture issues in 1.3:
+"Sentrybot texture caching bug: You have to disable "texture compression" and also in the Mod Options for Vanilla Framework Expanded ENABLE "disable texture caching"
+Info by Jedia Kyrol
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
@@ -141,6 +145,7 @@ ideas and suggestions would also be welcome!
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 
